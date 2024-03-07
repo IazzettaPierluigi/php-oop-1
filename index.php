@@ -14,8 +14,19 @@ class Movie
         $this->genre = $genre;
         $this->year = $year;
     }
+
+    //funzione per stampare info
+
+    public function printMovie()
+    {
+        echo "title: {$this->title}, genre: {$this->genre}, year: {$this->year}";
+    }
 }
 
+
+//creazione dei movies
+
+$movie1 = new Movie("Kill Bill vol.1", "Action/thriller", 2003);
 
 ?>
 

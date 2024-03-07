@@ -28,6 +28,8 @@ class Movie
 
 $movie1 = new Movie("Kill Bill vol.1", "Action/thriller", 2003);
 
+$movie2 = new Movie("The hateful eight", "Western/thriller", 2015);
+
 ?>
 
 
@@ -43,7 +45,20 @@ $movie1 = new Movie("Kill Bill vol.1", "Action/thriller", 2003);
 </head>
 
 <body>
-
+    <ul>
+        <li>
+            <?php
+            echo "Movie 1:";
+            $movie1->printMovie();
+            ?>
+        </li>
+        <li>
+            <?php
+            echo "Movie 2:";
+            $movie2->printMovie();
+            ?>
+        </li>
+    </ul>
 </body>
 
 </html>
